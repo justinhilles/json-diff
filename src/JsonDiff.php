@@ -245,7 +245,7 @@ class JsonDiff
             $pathItems = $this->pathItems;
             $actualKey = $key;
             if ($isArray) {
-                $actualKey -= $removedOffset;
+                //$actualKey -= $removedOffset;
             }
             $this->path .= '/' . JsonPointer::escapeSegment($actualKey, $this->options & self::JSON_URI_FRAGMENT_ID);
             $this->pathItems[] = $actualKey;
